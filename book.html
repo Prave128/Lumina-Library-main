@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Details - Lumina Library</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Lumina Library</h1>
+    <nav>
+      <a href="homepage.html">Home</a>
+    </nav>
+  </header>
+
+  <section id="book-detail" class="fade-in">
+    <h2 id="book-title"></h2>
+    <img id="book-cover" alt="Book cover" class="scale-in"/>
+    <p id="book-author"></p>
+    <p id="book-description"></p>
+    <div class="book-actions">
+      <a id="book-read-link" href="#" class="btn-primary">Read online</a>
+      <a id="download-btn" href="#" class="btn-secondary">Download</a>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="js/supabaseClient.js"></script>
+  <script src="js/book.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reading - Lumina Library</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Reading: <span id="book-title"></span></h1>
+    <nav>
+      <a href="homepage.html">Home</a>
+      <a href="#" id="prev-book-link">Book Details</a>
+    </nav>
+  </header>
+
+  <section id="book-reader" class="fade-in">
+    <div class="pdf-container">
+      <canvas id="pdf-render"></canvas>
+    </div>
+    
+    <div class="page-controls">
+      <button id="prev-page">Previous</button>
+      <div class="page-info">
+        Page <span id="page-num"></span> of <span id="page-count"></span>
+      </div>
+      <button id="next-page">Next</button>
+    </div>
+    
+    <div class="jump-controls">
+      <label for="jump-to-page">Jump to Page:</label>
+      <input type="number" id="jump-to-page" min="1" />
+      <button id="jump-btn">Go</button>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="js/supabaseClient.js"></script>
+  <script src="js/reader.js"></script>
+</body>
+</html>
